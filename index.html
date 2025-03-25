@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <meta name="title" content="Planet Clicker - Play Planet Clicker Online!">
+    <meta name="title" content="Planet Clicker - Play the Exciting Game Online">
     <meta name="description" content="Play Planet Clicker, an interactive and fun online game. Enjoy an engaging experience and maximize your gameplay with a fullscreen button.">
     <meta name="keywords" content="planet clicker, online game, interactive game, fullscreen game, play planet clicker, fun game, casual game">
-    <meta name="author" content="Planet Clicker">
+    <meta name="author" content="Your Name or Company">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph Tags for social media sharing -->
@@ -16,26 +16,15 @@
     <meta property="og:description" content="Play Planet Clicker, an interactive and fun online game. Enjoy an engaging experience and maximize your gameplay with a fullscreen button.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://planetclicker.site">
-    <meta property="og:image" content="planet-clicker-icon.png"> <!-- Optional image for social sharing -->
+    <meta property="og:image" content="/thumbnail.jpg"> <!-- Optional image for social sharing -->
     
     <!-- Twitter Card Tags for Twitter sharing -->
     <meta name="twitter:title" content="Planet Clicker - Play the Exciting Game Online">
     <meta name="twitter:description" content="Play Planet Clicker, an interactive and fun online game. Enjoy an engaging experience and maximize your gameplay with a fullscreen button.">
-    <meta name="twitter:image" content="planet-clicker-icon.png"> <!-- Optional image for Twitter -->
+    <meta name="twitter:image" content="/thumbnail.jpg"> <!-- Optional image for Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     
-    <title>Planet Clicker - Play Planet Clicker Online!</title>
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YC9247VVW6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YC9247VVW6');
-</script>
-
+    <title>Planet Clicker - Play the Exciting Game Online</title>
 
     <style>
         /* Global Style */
@@ -89,6 +78,31 @@
             height: 16px;
             margin-left: 8px;
         }
+		.box-header {
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  width: 100%;
+		  -webkit-box-pack: justify;
+		  -ms-flex-pack: justify;
+		  justify-content: space-between;
+		  -ms-flex-wrap: wrap;
+		  flex-wrap: wrap;
+		  -webkit-box-align: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		}
+		.header-game-extend {
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-align: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		  -webkit-box-pack: end;
+		  -ms-flex-pack: end;
+		  justify-content: flex-end;
+		}
 
         /* Mobile responsiveness: Adjust layout for smaller screens */
         @media (max-width: 1200px) {
@@ -119,15 +133,22 @@
     <!-- Fixed Width Container -->
     <div class="container">
         <!-- Embedded Iframe for Planet Clicker -->
-        <iframe src="embed.html" title="Planet Clicker" scrolling="auto" allowfullscreen></iframe>
-        
-        <!-- Maximize Button -->
-        <button onclick="openFullscreen()">
-            Maximize
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path fill="#ffffff" d="M32 32C14.3 32 0 46.3 0 64l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96z"/>
-            </svg>
-        </button>
+        <iframe src="https://scratch.mit.edu/projects/377874630/embed" title="Planet Clicker" scrolling="auto" allowfullscreen></iframe>
+		<div class="header-game">
+			<div class="header-game-extend">   
+				<!-- Maximize Button -->
+				<button onclick="openFullscreen()">
+					Maximize
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path fill="#ffffff" d="M32 32C14.3 32 0 46.3 0 64l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96z"/>
+					</svg>
+				</button>
+			</div>
+			<div class="game-full-rate">
+				<h1 class="" style="font-size: 24px; font-weight: 400; margin: 8px 0; text-transform: capitalize; white-space: unset;">Planet Clicker</h1>
+			</div>
+		</div>
+
     </div>
 
     <script>
