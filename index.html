@@ -39,19 +39,20 @@
             min-height: 100vh;
         }
 
-        /* Responsive Container */
+        /* Fixed Width Container */
         .container {
-			width:1200px;
+            width: 1200px;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
         }
 
         /* Embedded iframe */
         iframe {
-			width:1200px;
-            height: 600px; /* Adjust iframe height to be 60% of the viewport */
+            width: 100%;
+            height: 60vh; /* Adjust iframe height to be 60% of the viewport */
             border: none;
             background-color: #f1f1f1;
             border-radius: 8px;
@@ -78,8 +79,13 @@
             margin-left: 8px;
         }
 
-        /* Mobile responsiveness */
-        @media (max-width: 600px) {
+        /* Mobile responsiveness: Adjust layout for smaller screens */
+        @media (max-width: 1200px) {
+            .container {
+                width: 90%; /* Container width will be 90% of the screen size on smaller devices */
+                padding: 10px;
+            }
+
             iframe {
                 height: 50vh; /* Adjust iframe height for smaller screens */
             }
@@ -89,11 +95,17 @@
                 font-size: 14px;
             }
         }
+
+        @media (max-width: 600px) {
+            iframe {
+                height: 50vh; /* Adjust iframe height for even smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
 
-    <!-- Responsive Container -->
+    <!-- Fixed Width Container -->
     <div class="container">
         <!-- Embedded Iframe for Planet Clicker -->
         <iframe src="https://scratch.mit.edu/projects/377874630/embed" title="Planet Clicker" scrolling="auto" allowfullscreen></iframe>
