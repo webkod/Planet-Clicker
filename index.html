@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <meta name="title" content="Planet Clicker - Play the Exciting Game Online">
+    <meta name="title" content="Planet Clicker - Play Planet Clicker Online!">
     <meta name="description" content="Play Planet Clicker, an interactive and fun online game. Enjoy an engaging experience and maximize your gameplay with a fullscreen button.">
     <meta name="keywords" content="planet clicker, online game, interactive game, fullscreen game, play planet clicker, fun game, casual game">
-    <meta name="author" content="Your Name or Company">
+    <meta name="author" content="Planet Clicker">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph Tags for social media sharing -->
@@ -16,15 +16,26 @@
     <meta property="og:description" content="Play Planet Clicker, an interactive and fun online game. Enjoy an engaging experience and maximize your gameplay with a fullscreen button.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://planetclicker.site">
-    <meta property="og:image" content="/thumbnail.jpg"> <!-- Optional image for social sharing -->
+    <meta property="og:image" content="planet-clicker-icon.png"> <!-- Optional image for social sharing -->
     
     <!-- Twitter Card Tags for Twitter sharing -->
     <meta name="twitter:title" content="Planet Clicker - Play the Exciting Game Online">
     <meta name="twitter:description" content="Play Planet Clicker, an interactive and fun online game. Enjoy an engaging experience and maximize your gameplay with a fullscreen button.">
-    <meta name="twitter:image" content="/thumbnail.jpg"> <!-- Optional image for Twitter -->
+    <meta name="twitter:image" content="planet-clicker-icon.png"> <!-- Optional image for Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     
-    <title>Planet Clicker - Play the Exciting Game Online</title>
+    <title>Planet Clicker - Play Planet Clicker Online!</title>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YC9247VVW6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YC9247VVW6');
+</script>
+
 
     <style>
         /* Global Style */
@@ -78,31 +89,6 @@
             height: 16px;
             margin-left: 8px;
         }
-		.box-header {
-		  display: -webkit-box;
-		  display: -ms-flexbox;
-		  display: flex;
-		  width: 100%;
-		  -webkit-box-pack: justify;
-		  -ms-flex-pack: justify;
-		  justify-content: space-between;
-		  -ms-flex-wrap: wrap;
-		  flex-wrap: wrap;
-		  -webkit-box-align: center;
-		  -ms-flex-align: center;
-		  align-items: center;
-		}
-		.header-game-extend {
-		  display: -webkit-box;
-		  display: -ms-flexbox;
-		  display: flex;
-		  -webkit-box-align: center;
-		  -ms-flex-align: center;
-		  align-items: center;
-		  -webkit-box-pack: end;
-		  -ms-flex-pack: end;
-		  justify-content: flex-end;
-		}
 
         /* Mobile responsiveness: Adjust layout for smaller screens */
         @media (max-width: 1200px) {
@@ -133,7 +119,7 @@
     <!-- Fixed Width Container -->
     <div class="container">
         <!-- Embedded Iframe for Planet Clicker -->
-        <iframe src="https://scratch.mit.edu/projects/377874630/embed" title="Planet Clicker" scrolling="auto" allowfullscreen></iframe>
+        <iframe src="embed.html" title="Planet Clicker" scrolling="auto" allowfullscreen></iframe>
 		<div class="header-game">
 			<div class="header-game-extend">   
 				<!-- Maximize Button -->
@@ -148,7 +134,6 @@
 				<h1 class="" style="font-size: 24px; font-weight: 400; margin: 8px 0; text-transform: capitalize; white-space: unset;">Planet Clicker</h1>
 			</div>
 		</div>
-
     </div>
 
     <script>
